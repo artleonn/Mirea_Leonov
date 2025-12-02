@@ -12,7 +12,7 @@ public class ObservableStringBuilder {
         this.observers = new ArrayList<>();
     }
 
-    // Добавлен метод для доступа к строке
+
     public String getString() {
         return stringBuilder.toString();
     }

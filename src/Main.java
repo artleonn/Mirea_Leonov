@@ -95,7 +95,7 @@ public class Main {
 
         System.out.println("\n14. Отчет готов!");
 
-        // Демонстрация ввода с клавиатуры для магазина
+
         System.out.println("\nДемонстрация ввода компьютера с клавиатуры:");
         System.out.println("Хотите добавить компьютер? (yes/no)");
         String answer = scanner.nextLine();
@@ -108,11 +108,11 @@ public class Main {
         scanner.close();
     }
 
-    // Метод для демонстрации магазина
+
     private static Shop demonstrateComputerShop() {
         Shop shop = new Shop();
 
-        // Добавим несколько компьютеров
+
         Computer computer1 = new Computer(
                 Brand.ASUS,
                 new Processor("Intel i7", 3.5),
@@ -142,7 +142,7 @@ public class Main {
         return shop;
     }
 
-    // Метод для демонстрации UndoableStringBuilder
+
     private static void demonstrateUndoableStringBuilder() {
         UndoableStringBuilder usb = new UndoableStringBuilder();
         usb.append("Hello");
@@ -155,11 +155,11 @@ public class Main {
         System.out.println("После undo: " + usb);
     }
 
-    // Метод для демонстрации ObservableStringBuilder - ИСПРАВЛЕНО!
+
     private static void demonstrateObservableStringBuilder() {
         ObservableStringBuilder osb = new ObservableStringBuilder();
 
-        // ИСПРАВЛЕНИЕ: Используем корректную лямбда-выражение
+
         StringBuilderObserver observer = observable ->
                 System.out.println("Строка изменена: " + observable.toString());
 
@@ -168,7 +168,7 @@ public class Main {
         osb.append(" Observable");
         osb.delete(0, 6);
 
-        // Покажем финальный результат
+
         System.out.println("Финальная строка: " + osb);
     }
 }
