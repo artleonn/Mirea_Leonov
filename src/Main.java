@@ -4,28 +4,28 @@ public class Main {
         System.out.println("=== ПРАКТИЧЕСКАЯ РАБОТА №7 ===");
         System.out.println("=== Тестирование всех заданий ===\n");
 
-        // Разделитель для красоты
+
         String separator = "=".repeat(50);
 
-        // Задания 1-3: Movable
+
         System.out.println(separator);
         System.out.println("ЗАДАНИЯ 1-3: MovableRectangle и MovablePoint");
         System.out.println(separator);
         testMovable();
 
-        // Задание 4: MathCalculable
+
         System.out.println("\n" + separator);
         System.out.println("ЗАДАНИЕ 4: MathCalculable и MathFunc");
         System.out.println(separator);
         testMathCalculable();
 
-        // Задания 5-6: StringWork
+
         System.out.println("\n" + separator);
         System.out.println("ЗАДАНИЯ 5-6: StringWork и ProcessStrings");
         System.out.println(separator);
         testStringWork();
 
-        // Задания 7-9: Printable
+
         System.out.println("\n" + separator);
         System.out.println("ЗАДАНИЯ 7-9: Printable, Book, Journal");
         System.out.println(separator);
@@ -105,7 +105,7 @@ public class Main {
     }
 
     private static void testPrintable() {
-        // Создаем массив Printable объектов
+
         Printable[] items = {
                 new Book("Война и мир", "Л. Н. Толстой", 1863),
                 new Journal("Хакер"),
