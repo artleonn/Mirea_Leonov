@@ -1,4 +1,4 @@
-ppublic class ThrowsDemoModified {
+public class ThrowsDemoModified {
     public void printMessage(String key) {
         String message = getDetails(key);
         System.out.println(message);
